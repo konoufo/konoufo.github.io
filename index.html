@@ -1,0 +1,44 @@
+<!doctype html>
+<html style="height:100%;overflow:hidden;">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Investiv</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+	<link href='css/sakura.css' rel='stylesheet' type='text/css'>
+</head>
+<body id="body" style="font-size:16px;height:100%;overflow:hidden;">
+	<div class="container" style="height:100%; margin:auto; text-align:center; max-height:766px; max-width:950px; width:100%;">
+		<h1 style="color:#388E3C;font-family:Roboto;font-size:3em;font-weight:300;text-transform:uppercase;">Investiv<hr></h1>
+		
+		
+		<img src="img/farm_tractor.png" alt="Le tracteur vert des champs arrive..." style="max-height:766px; max-width:100%" />
+		<h2 style="font-family:Roboto;font-size:3em;text-transform:capitalize;">site en construction. à&nbsp;très&nbsp;bientôt.</h2>
+	</div>
+	<footer id="footer" style="bottom:0;font-family:Roboto;left:0;position:absolute;text-align:center;width:100%">
+		© Investiv 2017
+	</footer>
+	<script>
+		function getWindowWidth() {
+			var windowWidth = 0;
+			if (typeof(window.innerWidth) == 'number') {
+				windowWidth = window.innerWidth;
+			} else {
+				if (document.documentElement && document.documentElement.clientWidth) {
+					windowWidth = document.documentElement.clientWidth;
+				} else {
+					if (document.body && document.body.clientWidth) {
+						windowWidth = document.body.clientWidth;
+					}
+				}
+			}
+			return windowWidth;
+		}
+		
+		window.onload = function(){
+			if (getWindowWidth() < 728){document.getElementsByTagName("body")[0].style.fontSize = '9px';};
+		};
+	</script>
+</body>
+</html>
